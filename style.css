@@ -68,9 +68,12 @@ body {
         height: auto;
     }
 }
-@media (max-width:1360){
+@media (max-width:1360){ 
     footer hr {
         bottom: 3.5vh;
+    }
+    .account img {
+        width: 2.8rem; /*Dunno the meaning of rem*/
     }
 }
 
@@ -269,7 +272,7 @@ footer section.account {
     position: relative;
 }
 .account img {
-    width: 2.8rem; /*Dunno the meaning of rem*/
+    width: 3.5rem;
     height: auto;
     padding-top: 2vh !important;
     transition: 0.2s;
