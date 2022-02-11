@@ -11,3 +11,8 @@ This readme will also serves as my task needed to do in creating, fixing, adding
 
 - [ ] Make the site friendly to phones
     - use media query for now.
+
+- [ ] Make the tone of the linear-gradient of the welcome part more pleasing and not that dark
+
+### Adding pages
+    - [ ] make an about me part
