@@ -8,3 +8,6 @@ This readme will also serves as my task needed to do in creating, fixing, adding
 - [ ] add a JavaScript system for copying things to clipboard by clicking
     - See [Actual Wizard](https://actualwizard.com/how-to-copy-text-to-the-clipboard-with-html-and-javascript)
     - See [W3school](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp)
+
+- [ ] Make the site friendly to phones
+    - use media query for now.
