@@ -12,19 +12,15 @@ body {
     background-color: white ;
 }
 
-@media (max-width:1000){ 
-    p {
-        color: yellow
-    }
-    footer hr {
-        position: absolute;
-        bottom: 10vh;
+@media  all and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+    footer hr { 
+        bottom: 3.5vh;
     }
     .account img {
         width: 2.8rem; /*Dunno the meaning of rem*/
     }
 }
-@media (max-width: 800px){
+@media all and (max-width: 800px){
     p {
         font-size: 12px;
         color: darkblue;
@@ -49,7 +45,6 @@ body {
         position: absolute;
         width: 100vw;
     }
-
     .account img {
         width: 1.5rem;
         height: auto;

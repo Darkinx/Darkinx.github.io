@@ -4,6 +4,18 @@
         <title>Darkinator</title>
         <link rel="stylesheet" href="style.css">
         <meta> <!-- Dunno what really the point of this one-->
+        <script>
+            alert(window.outerWidth+' x '+window.outerHeight);
+            // Temporary JavaScript to check the width
+            window.addEventListener('resize', function() {
+	// viewport and full window dimensions will change
+	
+                var viewport_width = window.innerWidth;
+                var viewport_height = window.innerHeight;
+                console.log("Width: " + viewport_width);
+                console.log("Height: " + viewport_height);
+            });
+        </script>
     </head>
     <body>
         <header>
