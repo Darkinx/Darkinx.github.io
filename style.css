@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Quicksand:wght@400;600&display=swap');
+
+html, body {
+	padding:0;
+	margin:0;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: white ;
+}
+
+@media (max-width: 800px){
+    p {
+        font-size: 12px;
+        color: darkblue;
+    }
+    body{ 
+        flex-direction: column-reverse;
+    }
+    nav {
+        display: none;
+        width: 0;
+        margin: 0;
+    }
+    nav ul{
+        display: none;
+        width: 0%;
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    footer section.account {
+        position: absolute;
+        width: 100vw;
+    }
+
+    .account img {
+        width: 1.5rem;
+        height: auto;
+    }
+}
+@media (max-width:600px){
+    p {
+        font-size: 1px;
+        color: red;
+    }
+    nav ul{
+        display: none;
+        width: 0%;
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    a {
+        font-size: 8px;
+    }
+    footer section.account {
+        width: 100vw;
+        height: auto;
+    }
+    .account img {
+        width: 0.5rem;
+        height: auto;
+    }
+}
+@media (max-width:1360){
+    footer hr {
+        bottom: 3.5vh;
+    }
+}
+
+#navbar{
+    background-color: #a81230;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding: 20px 0;
+}
+#navbar a{
+    font: 1rem 'Quicksand', sans-serif;
+    float: right;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+#navbar a:hover {
+    color: lightcoral;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+main, #welcome-section, .row, #contact article, footer, .account img {
+    margin: 0 auto;
+}
+main {
+    position: relative;
+    /* top: 2.4rem; */
+}
+
+section#welcome-section { /*Align things to center using flex*/
+    display: flex;
+    background: linear-gradient(115deg, black, crimson);
+    background-size: 400% 400%; /*This is needed for the css gradient animation*/
+    height: 100vh;
+    text-align: center;
+    animation: wipe 10s ease-in-out;
+}
+
+@keyframes wipe {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 0%}
+}
+#welcome-section article {
+    margin: auto; /*to center*/
+}
+#welcome-section article h1, #welcome-section article p {
+    color: white;
+    line-height: 0% !important;
+}
+#welcome-section article h1{
+    font: 3rem 'Montserrat', sans-serif;
+}
+#welcome-section article p  {
+    font: 1rem 'Quicksand', sans-serif;
+}
+section#projects {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5vh 0;
+}
+section#projects h1 {
+    font: 3rem 'Lato', sans-serif;
+}
+section#tile-container a{
+    text-decoration: none;
+    color: black;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin: 0;
+}
+section div.row{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: center;
+}
+section article.project-tile{
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    justify-content: space-evenly;
+    margin: 20px;
+    border: 1px dotted darkgray;
+    transition: 0.2s ease-out;
+}
+section article.project-tile:hover {
+    /* transform: scale(1.01); */
+    transition: 0.3s ease-in;
+}
+.project-tile p::after, .project-tile p::before {
+    opacity: 0;
+    transition: 0.2s;
+}
+.project-tile p::before {
+    content: "{";
+}
+.project-tile p::after {
+    content: "}";
+}
+.project-tile:hover p::before, .project-tile:hover p::after {
+    opacity: 1;
+    color: crimson;
+    transform: scale(3);
+    transition: 0.3s;
+}
+.project-tile:hover p::before {
+    padding-right: 20px;
+}
+.project-tile:hover p::after {
+    padding-left: 20px;
+}
+.project-tile p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.project-tile img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+}
+section#projects button {
+    box-sizing: border-box;
+    background-color: #22356e;
+    border: 2px solid #22356e;
+    color: white;
+    font: 15px 'Quicksand', sans-serif;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+section#projects button::after {
+    padding-left: 0px;
+    opacity: 0;
+    transition: 0.2s;
+}
+section#projects button:hover {
+    background-color: white;
+    color: #22356e;
+    padding: 12px 30px;
+    transition: 0.3s;
+}
+
+#projects button:hover::after {
+    content: '>';
+    color: #22356e;
+    font-stretch: ultra-expanded;
+    padding-left: 15px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+/* CONTACTS and FOOTER Part */
+section#contact, footer, footer .account {
+    display: flex !important;
+    background-color: #22356e;
+    text-align: center;
+}
+section#contact {
+    height: 60vh;
+    align-items: center;
+}
+#contact article h3 {
+    color: white;
+    font: 3.5rem 'Montserrat', sans-serif;
+    margin: 0;
+} 
+#contact article p{
+    margin: 0;
+    color: crimson;
+    font: 1.2rem 'Lato', sans-serif;
+}
+footer {
+    justify-content: center; /*center the flex horizontally*/
+    align-items: center; /*center the flex vertically*/
+    height: 10vh;
+    position: relative;
+    box-sizing: border-box;
+}
+footer section.account {
+    background-color: black;
+    justify-content: space-evenly; /*as the attribute state*/
+    align-items: center; /*Center vertically */
+    order: 2;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+}
+.account a{
+    text-decoration: none;
+}
+.account a article {
+    /* display: inline-block; */
+    position: relative;
+}
+.account img {
+    width: 2.8rem; /*Dunno the meaning of rem*/
+    height: auto;
+    padding-top: 2vh !important;
+    transition: 0.2s;
+    opacity: 0.5;
+}
+.account .img-top {
+    display: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+.account article:hover .img-top{
+    display: inline;
+    opacity: 1;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.account article:hover img {
+    opacity: 0;
+    transition: 0.3s;
+}
+footer h5, footer p {
+    /* align-self: center; */
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #22356e;
+    margin: 0;
+    padding: 0 5px;
+    z-index: 1;
+}
+footer h5{
+    color:gray;
+    order: 1;
+    margin-right: 2%;
+}
+footer p {
+    order:3;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/*Not working*/
+footer hr { 
+    width: 100%;
+    color: gray;
+    position: absolute;
+    bottom: 3.5vh;
+}
