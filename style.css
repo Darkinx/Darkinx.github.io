@@ -17,7 +17,7 @@ body {
         bottom: 3.5vh;
     }
     .account img {
-        width: 2.8rem; /*Dunno the meaning of rem*/
+        width: 2.8rem !important; /*Dunno the meaning of rem*/
     }
 }
 @media all and (min-device-width: 600px) and (max-device-width: 800px){
