@@ -11,83 +11,6 @@ body {
     overflow-x: hidden;
     background-color: white ;
 }
-
-@media all and (max-width: 1199px) and (min-width: 800px) {
-    footer hr { 
-        bottom: 3.5vh !important;
-    }
-    .account img {
-        width: 2.5rem !important; /*Dunno the meaning of rem*/
-    }
-}
-
-@media all and (min-device-width: 600px) and (max-device-width: 799px){
-    p {
-        font-size: 12px;
-        color: darkblue;
-    }
-    nav { /*Disable the navigation and replace it with burger mode*/
-        display: none;
-        width: 0;
-        margin: 0;
-    }
-    nav ul{
-        display: none;
-        width: 0%;
-        margin: 0;
-    }
-    main {
-        margin: 0;
-    }
-    footer {
-        height: auto !important;
-    }
-    footer section.account { /*Need to remove the important part*/
-        width: 80vw !important;
-    }
-    .account img {
-        width: 2rem !important;
-        height: auto;
-    }
-    footer h5, footer p, footer hr {
-        display: none;
-    }
-}
-@media all and (max-width:600px){
-    p {
-        font-size: 8px;
-        color: red;
-    }
-    nav ul{
-        display: none;
-        width: 0%;
-        margin: 0;
-    }
-    main {
-        margin: 0;
-    }
-    a {
-        font-size: 8px;
-    }
-    footer {
-        height: auto !important;
-        justify-content: space-evenly;
-    }
-    footer section.account {
-        width: 100vw !important;
-        height: auto;
-    }
-    .account img {
-        width: 3rem !important;
-        margin: 10px 0 !important;
-        height: auto;
-    }
-    footer h5, footer p, footer hr {
-        display: none;
-    }
-}
-
-
 #navbar{
     background-color: #a81230;
     position: fixed;
@@ -241,7 +164,7 @@ section#projects button:hover {
 
 /* CONTACTS and FOOTER Part */
 section#contact, footer, footer .account {
-    display: flex !important;
+    display: flex;
     background-color: #22356e;
     text-align: center;
 }

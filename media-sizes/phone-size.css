@@ -1,0 +1,16 @@
+/* min-width: 800px; media query */
+p {
+    color: yellow;
+}
+footer section.account {
+    width:  50vw;
+}
+footer h5, footer p {
+    font-size: 10px;
+}
+footer hr { 
+    bottom: 3.5vh;
+}
+.account img {
+    width: 2rem; /*Dunno the meaning of rem*/
+}
