@@ -12,15 +12,16 @@ body {
     background-color: white ;
 }
 
-@media  all and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+@media all and (max-width: 1199px) and (min-width: 800px) {
     footer hr { 
-        bottom: 3.5vh;
+        bottom: 3.5vh !important;
     }
     .account img {
-        width: 2.8rem !important; /*Dunno the meaning of rem*/
+        width: 2.5rem !important; /*Dunno the meaning of rem*/
     }
 }
-@media all and (min-device-width: 600px) and (max-device-width: 800px){
+
+@media all and (min-device-width: 600px) and (max-device-width: 799px){
     p {
         font-size: 12px;
         color: darkblue;
@@ -52,7 +53,7 @@ body {
         display: none;
     }
 }
-@media (max-width:600px){
+@media all and (max-width:600px){
     p {
         font-size: 8px;
         color: red;
@@ -135,7 +136,7 @@ section#welcome-section { /*Align things to center using flex*/
 }
 #welcome-section article h1, #welcome-section article p {
     color: white;
-    line-height: 0% !important;
+    margin: 0;
 }
 #welcome-section article h1{
     font: 3rem 'Montserrat', sans-serif;
