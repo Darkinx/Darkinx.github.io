@@ -22,15 +22,12 @@ main {
 #welcome-section article p  {
     font: 1rem 'Quicksand', sans-serif;
 }
+/* Project of Works section */
 section#projects h1 {
     font: 2rem 'Lato', sans-serif;
 }
-/* Project of Works section */
 section div.row{
-    display: flex;
-    flex-direction: row;
     width: 100%;
-    justify-content: center;
 }
 /* Contacts Section */
 #contact article h3 {
