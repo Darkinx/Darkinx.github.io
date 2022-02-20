@@ -1,9 +1,25 @@
 /* min-width: 800px; max-width: 1119px; media query */
+/* Will look on having a burger or menu navigation system */
 p {
-    color: yellow;
+    color: crimson;
+}
+/* Project of Works section */
+section#projects h1 {
+    font: 2.5rem 'Lato', sans-serif;
+}
+section div.row{
+    width: 100%;
+}
+/* Contacts Section */
+#contact article h3 {
+    font: 3rem 'Montserrat', sans-serif;
+} 
+#contact article p{
+    font: 0.8rem 'Lato', sans-serif;
 }
 footer section.account {
-    width:  50vw;
+    width:  100%;
+    height: 15vh;
 }
 footer h5, footer p {
     font-size: 10px;
@@ -11,6 +27,9 @@ footer h5, footer p {
 footer hr { 
     bottom: 3.5vh;
 }
+footer h5, footer p, footer hr {
+    display: none;
+}
 .account img {
-    width: 2rem; /*Dunno the meaning of rem*/
+    width: 3rem; /*Dunno the meaning of rem*/
 }
