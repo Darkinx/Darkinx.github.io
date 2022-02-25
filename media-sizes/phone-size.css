@@ -39,7 +39,7 @@ section div.row{
 footer {
     height: auto;
 }
-footer section.account { /*Need to remove the important part*/
+footer section.account {
     width: 100%;
     height: 20vh;
 }

@@ -8,15 +8,18 @@ This readme will also serves as my task needed to do in creating, fixing, adding
 - [ ] add a JavaScript system for copying things to clipboard by clicking
     - See [Actual Wizard](https://actualwizard.com/how-to-copy-text-to-the-clipboard-with-html-and-javascript)
     - See [W3school](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp)
+    - See later on what to do on the Discord part of this one
 
 - [ ] Make the site friendly to phones
     - use media query for now.
 
 - [ ] Add a metadata for the HTML part
+    - Still don't know what this really do.
 
-- [ ] Remove the usage of "!important" on media queries properties since it will probably going to messed up things in the future.
+- [x] Remove the usage of "!important" on media queries properties since it will probably going to messed up things in the future.
 
 - [ ] Make the tone of the linear-gradient of the welcome part more pleasing and not that dark
 
 ### Adding pages
+
     - [ ] make an about me part

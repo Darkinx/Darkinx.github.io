@@ -1,7 +1,7 @@
 /* max-width: 600px; media query */
 p {
     font-size: 8px;
-    color: red;
+    color: black;
 }
 nav ul{
     display: none;
@@ -15,16 +15,15 @@ a {
     font-size: 8px;
 }
 footer {
-    height: auto !important;
     justify-content: space-evenly;
 }
 footer section.account {
-    /* width: 100% !important; */
-    height: auto;
+    width: 100%;
+    height: 20vh;
 }
 .account img {
-    width: 3rem !important;
-    margin: 10px 0 !important;
+    width: 3rem;
+    margin: 10px 0;
     height: auto;
 }
 footer h5, footer p, footer hr {
