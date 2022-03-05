@@ -28,8 +28,9 @@ body {
     transition: 0.2s;
 }
 #navbar a:hover {
-    color: lightcoral;
+    color: darkslateblue;
     transform: scale(1.1);
+    font-weight: bold;
     transition: 0.3s;
 }
 main, #welcome-section, .row, #contact article, footer, .account img {
@@ -46,7 +47,7 @@ section#welcome-section { /*Align things to center using flex*/
     background-size: 400% 400%; /*This is needed for the css gradient animation*/
     height: 100vh;
     text-align: center;
-    animation: wipe 10s ease-in-out;
+    animation: wipe 15s ease-in-out infinite;
 }
 
 @keyframes wipe {
