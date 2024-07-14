@@ -28,8 +28,8 @@ body {
     transition: 0.2s;
 }
 #navbar a:hover {
-    color: darkslateblue;
-    transform: scale(1.1);
+    color: rgb(57, 51, 99);
+    /* transform: scale(1.1); */
     font-weight: bold;
     transition: 0.3s;
 }
@@ -79,7 +79,7 @@ section#projects h1 {
 section#tile-container a{
     text-decoration: none;
     color: black;
-    width: 33.33%;
+    width: 50%;
     box-sizing: border-box;
     margin: 0;
 }
@@ -160,6 +160,14 @@ section#projects button:hover {
     padding-left: 15px;
     opacity: 1;
     transition: 0.3s;
+}
+
+#void-linux{
+    content: url('assets/pictures/Void_Linux_logo.svg'); 
+    width: 80%;
+    height: auto;
+    padding: 17.5% 10%;
+    margin: auto;
 }
 
 
